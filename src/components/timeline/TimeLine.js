@@ -7,7 +7,7 @@ class TimeLine extends React.Component {
         console.log("On a en haut: " + news);
         return (
             <div className="timeline">
-                { news.map((myNews) => <News myNews={myNews}/>) }
+                { news.map((myNews) => <News key={myNews.id} myNews={myNews}/>) }
             </div>
         );
     }

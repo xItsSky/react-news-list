@@ -1,5 +1,6 @@
 import React from 'react';
 import Com from "./Com/Com";
+import uniqid from 'uniqid'
 
 function ComsList(props) {
     const { coms } = props;
@@ -8,7 +9,7 @@ function ComsList(props) {
 
     return (
         <div className="coms_list">
-            {coms.map((com) => <Com com={com} /> )}
+            {coms.map((com) => <Com key={uniqid()} com={com} /> )}
         </div>
     );
 }
