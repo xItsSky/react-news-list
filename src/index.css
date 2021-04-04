@@ -1,13 +1,84 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.App {
+  width: 650px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.news {
+  border: 0.1rem solid #D7D7D7;
+  border-radius: 0.8rem;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.com {
+  padding: 10px;
+  margin-top: 5px;
+  background-image:radial-gradient(#E8E8E8, #FFFFFF);
+}
+
+.com:last-child {
+  margin-bottom: 0;
+}
+
+.message_header {
+  padding-bottom: 20px;
+}
+
+.message_header .author {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.message_header .date {
+  color: #999;
+  font-size: 12px;
+}
+
+.avatar {
+  height: 1.5rem;
+}
+
+.Message {
+}
+
+.coms_list {
+  margin: -20px;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 13px;
+}
+
+.Reactions {
+  font-size: 13px;
+  padding-top: 20px;
+}
+
+.Reactions .Reactions__reaction {
+  display: inline-block;
+  padding: 3px 5px;
+  font-weight: 700;
+  color: #777;
+  transition: all .25s;
+}
+
+.Reactions .Reactions__reaction:hover, .Reactions .Reactions__reaction--selected {
+  color: #000;
+  cursor: pointer;
+  background-color: rgb(250, 250, 250);
 }
